@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Darren Flynt | Strategic IT Advisor & Risk Governance Expert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --navy-mid: #162233;
+    --navy-light: #1e2f42;
+    --slate: #2c4a6e;
+    --steel: #4a7fa5;
+    --teal: #3db9a0;
+    --teal-dim: #2a8a77;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --cream: #f5f0e8;
+    --white: #ffffff;
+    --gray-light: #e8ecf0;
+    --gray-mid: #94a3b8;
+    --text-body: #c9d4df;
+    --text-dim: #7a95ae;
+    --border: rgba(61, 185, 160, 0.15);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background-color: var(--navy); color: var(--text-body); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
+
+  .tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--teal);
+    border: 1px solid rgba(61,185,160,0.4);
+    padding: 0.3rem 0.85rem;
+    border-radius: 2px;
+    margin-bottom: 1.4rem;
+  }
+
+  /* ── NAVIGATION ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(13,27,42,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(61,185,160,0.1);
+  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--white); }
+  .nav-logo span { color: var(--teal); }
+  .nav-cta { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 500; color: var(--navy); background: var(--teal); padding: 0.6rem 1.4rem; border-radius: 3px; text-decoration: none; text-transform: uppercase; }
+
+  /* ── HERO ── */
+  #hero { min-height: 100vh; display: flex; align-items: center; position: relative; padding: 10rem 2rem 6rem; overflow: hidden; }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 85% 50%, rgba(44,74,110,0.45) 0%, transparent 70%),
+                linear-gradient(160deg, #0d1b2a 0%, #162233 60%, #0d1b2a 100%);
+  }
+  .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(61,185,160,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(61,185,160,0.04) 1px, transparent 1px); background-size: 60px 60px; }
+  .hero-content { position: relative; z-index: 2; max-width: 780px; }
+  
+  h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 5.5vw, 4.2rem); font-weight: 900; line-height: 1.12; color: var(--white); margin-bottom: 1.6rem; }
+  .gold-word { color: var(--gold-light); }
+  .hero-sub { font-size: 1.15rem; color: var(--text-body); max-width: 620px; margin-bottom: 2.5rem; }
+  .btn-primary { display: inline-block; background: var(--teal); color: var(--navy); padding: 1rem 2rem; font-weight: 600; text-decoration: none; border-radius: 3px; transition: 0.2s; }
+  .btn-primary:hover { background: var(--gold); transform: translateY(-2px); }
+  
+  .hero-stat-row { display: flex; gap: 3rem; margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid var(--border); flex-wrap: wrap; }
+  .hero-stat strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.9rem; color: var(--white); }
+  .hero-stat span { font-size: 0.78rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* ── RECOMMENDATIONS / IMPACT ── */
+  #impact { padding: 8rem 2rem; background: var(--navy-mid); }
+  .impact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+  .impact-card { background: var(--navy-light); padding: 2.5rem; border: 1px solid var(--border); border-radius: 4px; position: relative; }
+  .impact-card p { font-style: italic; font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--cream); margin-bottom: 1.5rem; }
+  .impact-card .client { font-family: 'DM Mono', monospace; font-size: 0.75rem; color: var(--teal); text-transform: uppercase; }
+
+  /* ── ABOUT ── */
+  #about { background: var(--navy); padding: 8rem 2rem; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: center; }
+  .portrait-frame {
+    width: 100%; aspect-ratio: 4/5; border-radius: 4px; border: 1px solid var(--border); overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  }
+  .portrait-image { width: 100%; height: 100%; object-fit: cover; }
+  .quote-box { font-family: 'Playfair Display', serif; font-style: italic; color: var(--teal); border-left: 2px solid var(--teal); padding-left: 1.5rem; margin-top: 2rem; font-size: 1.2rem; }
+
+  /* ── CAPABILITIES ── */
+  #capabilities { padding: 8rem 2rem; background: var(--navy-mid); }
+  .capabilities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3rem; }
+  .cap-card { background: var(--navy-light); padding: 2.5rem; border: 1px solid var(--border); border-radius: 4px; transition: 0.3s; }
+  .cap-card:hover { border-color: var(--teal); transform: translateY(-5px); }
+  .cap-card h3 { color: var(--gold-light); font-family: 'Playfair Display', serif; margin-bottom: 1.5rem; font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; }
+  .cap-card ul { list-style: none; }
+  .cap-card li { font-size: 0.95rem; margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative; color: var(--text-body); line-height: 1.4; }
+  .cap-card li::before { content: "→"; position: absolute; left: 0; color: var(--teal); }
+
+  .partner-highlight { background: var(--navy) !important; border: 1px solid var(--teal) !important; }
+  .partner-highlight h3 { color: var(--teal) !important; }
+
+  /* ── CONTACT ── */
+  #contact { padding: 8rem 2rem; background: var(--navy); text-align: center; }
+  .contact-form { max-width: 600px; margin: 3rem auto 0; text-align: left; background: var(--navy-mid); padding: 2.5rem; border: 1px solid var(--border); border-radius: 4px; }
+  .form-group { margin-bottom: 1.5rem; }
+  .form-group label { display: block; font-size: 0.8rem; color: var(--teal); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  .form-group input, .form-group textarea { width: 100%; padding: 0.8rem; background: var(--navy-light); border: 1px solid var(--border); color: var(--white); font-family: inherit; }
+  .btn-submit { background: var(--teal); color: var(--navy); border: none; padding: 1rem; font-weight: 700; cursor: pointer; width: 100%; text-transform: uppercase; letter-spacing: 0.1em; transition: 0.2s; }
+  .btn-submit:hover { background: var(--gold); }
+
+  footer { background: var(--navy-mid); padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--border); }
+  .location-list { font-size: 0.75rem; color: var(--text-dim); margin: 1.5rem 0; letter-spacing: 0.05em; line-height: 2; }
+
+  @media (max-width: 900px) { .about-grid, .capabilities-grid, .impact-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Darren Flynt<span>.</span></div>
+  <a href="#contact" class="nav-cta">Get Strategic Advice</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="tag">Strategic IT Advisor &amp; Risk Governance</span>
+        <span style="font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.05em; margin-left: 10px;">📍 West Coast Strategic Lead | Global US & EMEA Delivery Network</span>
+      </div>
+
+      <h1>
+        Translate technical risk into<br/>
+        <span class="gold-word">financial solvability.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Leveraging a <strong>Master of Science in Finance</strong> and a decade in the CIO seat, I advise mid-market firms on IT concerns big and small—eliminating liability through a global support engine that covers the US and EMEA.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://calendly.com/darrenflynt" target="_blank" class="btn-primary">Schedule a Meeting →</a>
+        <a href="#about" style="margin-left: 1.5rem; color: var(--text-dim); text-decoration: none; font-weight: 500;">Meet Darren</a>
+      </div>
+
+      <div class="hero-stat-row">
+        <div class="hero-stat">
+          <strong>10</strong>
+          <span>Years in the CIO Seat</span>
+        </div>
+        <div class="hero-stat">
+          <strong>24/7</strong>
+          <span>US & EMEA Support Ops</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Zero</strong>
+          <span>Tool Reselling. Just Guidance.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <span class="tag">Leadership Impact</span>
+      <h2 style="color: var(--white); font-family: 'Playfair Display', serif; font-size: 2.5rem;">Proven Results in Complex Environments</h2>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <p>"Darren built a global IT foundation that scaled with our transition from a regional player to a global manufacturing leader."</p>
+        <span class="client">Global Manufacturing / CIO Tenure</span>
+      </div>
+      <div class="impact-card">
+        <p>"He transformed our data strategy into a reliable asset, providing the actionable insights needed for high-stakes leadership decisions."</p>
+        <span class="client">Energy Sector / Office of the CIO</span>
+      </div>
+      <div class="impact-card">
+        <p>"His focus on Lean/Six Sigma methodology brought a level of operational predictability and cost reduction we hadn't seen in IT."</p>
+        <span class="client">Operational Excellence / Process Lead</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="portrait-frame">
+        <img src="image_0.png" alt="Darren Flynt" class="portrait-image" />
+      </div>
+      <div class="about-copy">
+        <span class="tag">The Perspective</span>
+        <h2 style="color: var(--white); margin-bottom: 1.5rem;">I’ve sat in your chair.</h2>
+        <p>Most cybersecurity conversations die in one place: <strong>the business case</strong>.</p>
+        <p>I know the visceral dread of a 2 a.m. breach call and the frustration of explaining 'zero trust' to a board focused solely on EBITDA. My finance background allows me to stop the technical noise and focus on what matters: protecting the bottom line.</p>
+        <div class="quote-box">
+          "I build the governance roadmaps I wish I’d had—without selling tools, just real strategic guidance backed by global execution."
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <span class="tag">Capabilities Pillars</span>
+      <h2 style="color: var(--white); font-family: 'Playfair Display', serif; font-size: 3rem;">Global Strategy & Support</h2>
+    </div>
+
+    <div class="capabilities-grid">
+      <div class="cap-card">
+        <h3>Strategic Advisory</h3>
+        <ul>
+          <li>IT Strategy & Roadmap Development</li>
+          <li>Compliance Alignment (SOC 2, HIPAA, GDPR)</li>
+          <li>M&A Technology Due Diligence</li>
+          <li>IT Budgeting & Financial Optimization</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <h3>Cyber Defense</h3>
+        <ul>
+          <li>24/7 Managed Detection & Response (MDR)</li>
+          <li>Endpoint & Identity Protection (MFA)</li>
+          <li>Vulnerability & Patch Management</li>
+          <li>Email & Phishing Security Defense</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <h3>Managed Operations</h3>
+        <ul>
+          <li>Global 24/7 Technical Helpdesk</li>
+          <li>Cloud Enablement (Azure, AWS, M365)</li>
+          <li>Backup & Disaster Recovery (BDR)</li>
+          <li>Network Performance & SD-WAN</li>
+        </ul>
+      </div>
+
+      <div class="cap-card">
+        <h3>Specialized Solutions</h3>
+        <ul>
+          <li><strong>Enterprise QuickBooks Hosting</strong></li>
+          <li><strong>Low Code / No Code Platforms</strong></li>
+          <li><strong>Custom Software Development</strong></li>
+          <li>Documentation & Config Intelligence</li>
+        </ul>
+      </div>
+
+      <div class="cap-card partner-highlight">
+        <h3>Software Partners</h3>
+        <ul>
+          <li>Acronis</li>
+          <li>Arctic Wolf</li>
+          <li>AutoElevate</li>
+          <li>AWS</li>
+          <li>BrightGauge</li>
+          <li>Cloud Radial</li>
+          <li>ConnectWise</li>
+          <li>Crowdstrike</li>
+          <li>Datto</li>
+          <li>DefensX</li>
+          <li>Huntress</li>
+          <li>Immy.Bot</li>
+          <li>Inforcer</li>
+          <li>IT Glue</li>
+          <li>KnowBe4</li>
+          <li>Liongard</li>
+          <li>Meraki</li>
+          <li>Microsoft</li>
+          <li>NinjaOne</li>
+          <li>Palo Alto</li>
+          <li>ScalePad</li>
+          <li>SentinelOne</li>
+          <li>Sophos</li>
+        </ul>
+      </div>
+
+      <div class="cap-card partner-highlight">
+        <h3>Hardware Partners</h3>
+        <ul>
+          <li>APC</li>
+          <li>Cisco</li>
+          <li>Dell</li>
+          <li>Fortinet</li>
+          <li>HP</li>
+          <li>Lenovo</li>
+          <li>Meraki</li>
+          <li>Palo Alto</li>
+          <li>Sophos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <span class="tag">Contact</span>
+    <h2 style="color: var(--white); font-family: 'Playfair Display', serif; font-size: 2.5rem;">Let’s solve your IT noise.</h2>
+    <p style="max-width: 600px; margin: 1rem auto; color: var(--text-body);">I provide local West Coast strategy with a global support infrastructure. Let's discuss your roadmap.</p>
+    
+    <form class="contact-form" action="https://formspree.io/f/mgonweyb" method="POST">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" required placeholder="Full Name">
+      </div>
+      <div class="form-group">
+        <label>Business Email</label>
+        <input type="email" name="_replyto" required placeholder="email@company.com">
+      </div>
+      <div class="form-group">
+        <label>How can I help?</label>
+        <textarea name="message" rows="5" placeholder="Describe your concern..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Inquiry</button>
+    </form>
+    
+    <p style="margin-top: 2.5rem; font-size: 0.9rem; color: var(--text-dim);">
+      Ready to talk? <a href="https://calendly.com/darrenflynt" style="color: var(--teal); text-decoration: none; font-weight: 600;">Book via Calendly</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div style="font-family: 'Playfair Display'; font-weight: 700; font-size: 1.4rem; color: var(--white);">Darren Flynt<span>.</span></div>
+    
+    <div class="location-list">
+      <strong>West Coast Strategic Hubs:</strong><br>
+      Portland, OR • Hillsboro, OR • Dundee, OR • Valencia, CA • Campbell, CA • Covina, CA • Escondido, CA<br>
+      <span style="opacity: 0.6; font-size: 0.7rem; margin-top: 10px; display: block;">
+        Supported by global engineering hubs across the United States, United Kingdom, and EMEA.
+      </span>
+    </div>
+
+    <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 2rem;">
+      © 2026 Darren Flynt. Strategic IT Advisor. West Coast Strategy | Global Delivery.
+      <br><br>
+      <a href="https://www.linkedin.com/in/darrenflynt" target="_blank" style="color: var(--teal); text-decoration: none;">Connect on LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
