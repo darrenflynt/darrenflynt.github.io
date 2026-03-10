@@ -2,6 +2,12 @@
   "subscriber_count": "452",
   "editions": [
     {
+      "number": "24",
+      "title": "The True Cost of IT Headcount",
+      "description": "Benchmarking In-House vs. Outsourced IT Labor\n\nMost leadership teams compare IT labor like this:\n\n\n“How much does an IT employee cost?” Versus “How much does ou...",
+      "url": "https://www.linkedin.com/pulse/edition-24-true-cost-headcount-darren-flynt-4iusc"
+    },
+    {
       "number": "23",
       "title": "Compliance Is a Costly Signal (And How to Fake It)",
       "description": "Your competitor just got SOC 2 certified.\n\nThey are using it to steal your enterprise deals.\n\n\nIf that sentence makes you feel a little annoyed, good. It should...",
@@ -12,14 +18,8 @@
       "title": "The SLA Gap",
       "description": "A CFO’s Guide to Recovering 15% of IT Spend\n\nYou are paying for 99.9% uptime. You are receiving 99.0% uptime.\n\n\nDo you know what that gap is worth in cash?\n\n\nMo...",
       "url": "https://www.linkedin.com/pulse/edition-22-sla-gap-darren-flynt-sjusc"
-    },
-    {
-      "number": "21",
-      "title": "The Cloud OpEx Trap",
-      "description": "\nWhy “Flexible” Cloud Spend Wrecks Forecasting (and EBITDA)\n\n\nWe were sold a simple story.\n\n\nMove to the cloud. Shift CapEx to OpEx. Save money. Gain “flexibili...",
-      "url": "https://www.linkedin.com/pulse/cloud-opex-trap-darren-flynt-xtazc"
     }
   ],
-  "updated_at": "2026-03-09T21:03:37.968442+00:00",
+  "updated_at": "2026-03-10T16:34:44.400396+00:00",
   "newsletter_url": "https://www.linkedin.com/newsletters/the-finops-insider-7360380550928371712/"
 }
