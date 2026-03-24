@@ -2,6 +2,12 @@
   "subscriber_count": "452",
   "editions": [
     {
+      "number": "26",
+      "title": "Why Treating IT Like “Magic” Becomes a Financial Liability",
+      "description": "In Finance, nobody blinks when you bring in specialists for the hard stuff.\n\nComplex tax. Technical accounting. Audit support. Specialized risk work.\n\n\nThat is...",
+      "url": "https://www.linkedin.com/pulse/edition-26-why-treating-like-magic-becomes-financial-liability-flynt-hkrbc"
+    },
+    {
       "number": "25",
       "title": "AI Is Rewriting the IT Org Chart",
       "description": "AI Is Rewriting the IT Org Chart, Not Just the Tool Stack\n\nA lot of CFOs are hearing the same pitch right now.\n\n\n“AI will make IT more efficient.” “AI will redu...",
@@ -12,14 +18,8 @@
       "title": "The True Cost of IT Headcount",
       "description": "Benchmarking In-House vs. Outsourced IT Labor\n\nMost leadership teams compare IT labor like this:\n\n\n“How much does an IT employee cost?” Versus “How much does ou...",
       "url": "https://www.linkedin.com/pulse/edition-24-true-cost-headcount-darren-flynt-4iusc"
-    },
-    {
-      "number": "23",
-      "title": "Compliance Is a Costly Signal (And How to Fake It)",
-      "description": "Your competitor just got SOC 2 certified.\n\nThey are using it to steal your enterprise deals.\n\n\nIf that sentence makes you feel a little annoyed, good. It should...",
-      "url": "https://www.linkedin.com/pulse/edition-23-compliance-costly-signal-how-fake-darren-flynt-klbpc"
     }
   ],
-  "updated_at": "2026-03-23T21:54:18.622485+00:00",
+  "updated_at": "2026-03-24T16:07:59.842823+00:00",
   "newsletter_url": "https://www.linkedin.com/newsletters/the-finops-insider-7360380550928371712/"
 }
