@@ -2,6 +2,12 @@
   "subscriber_count": "452",
   "editions": [
     {
+      "number": "27",
+      "title": "The IT Integration Gap: Where Roll-Ups Quietly Lose Turns",
+      "description": "You can close an acquisition in 60 days. You cannot stabilize the operating environment in 60 days.\n\nThat gap is where portfolio value leaks.\n\n\nIn most mid-mark...",
+      "url": "https://www.linkedin.com/pulse/edition-27-integration-gap-where-roll-ups-quietly-lose-darren-flynt-lyqqc"
+    },
+    {
       "number": "26",
       "title": "Why Treating IT Like “Magic” Becomes a Financial Liability",
       "description": "In Finance, nobody blinks when you bring in specialists for the hard stuff.\n\nComplex tax. Technical accounting. Audit support. Specialized risk work.\n\n\nThat is...",
@@ -12,14 +18,8 @@
       "title": "AI Is Rewriting the IT Org Chart",
       "description": "AI Is Rewriting the IT Org Chart, Not Just the Tool Stack\n\nA lot of CFOs are hearing the same pitch right now.\n\n\n“AI will make IT more efficient.” “AI will redu...",
       "url": "https://www.linkedin.com/pulse/edition-25-ai-rewriting-org-chart-darren-flynt-esrfc"
-    },
-    {
-      "number": "24",
-      "title": "The True Cost of IT Headcount",
-      "description": "Benchmarking In-House vs. Outsourced IT Labor\n\nMost leadership teams compare IT labor like this:\n\n\n“How much does an IT employee cost?” Versus “How much does ou...",
-      "url": "https://www.linkedin.com/pulse/edition-24-true-cost-headcount-darren-flynt-4iusc"
     }
   ],
-  "updated_at": "2026-03-30T22:00:49.966631+00:00",
+  "updated_at": "2026-03-31T17:21:35.628478+00:00",
   "newsletter_url": "https://www.linkedin.com/newsletters/the-finops-insider-7360380550928371712/"
 }
