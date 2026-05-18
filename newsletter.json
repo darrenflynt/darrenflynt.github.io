@@ -2,6 +2,12 @@
   "subscriber_count": "452",
   "editions": [
     {
+      "number": "29",
+      "title": "The Recovery Delta",
+      "description": "\nWhy \"Backups\" are a Technical Metric, but \"Downtime\" is a Financial One\n\n\n\nIn my career as a CIO, and particularly through the lens of my MS in Finance, I lear...",
+      "url": "https://www.linkedin.com/pulse/edition-29-recovery-delta-darren-flynt-arquc"
+    },
+    {
       "number": "28",
       "title": "Stop Buying “Security” and Start Demanding a Risk Framework",
       "description": "\nIf your IT leader’s cybersecurity plan can be summarized as “we do security,” your balance sheet is exposed.\n\n\n\nNot because your team is careless. Because that...",
@@ -12,14 +18,8 @@
       "title": "The IT Integration Gap: Where Roll-Ups Quietly Lose Turns",
       "description": "\nYou can close an acquisition in 60 days. You cannot stabilize the operating environment in 60 days.\n\n\n\nThat gap is where portfolio value leaks.\n\n\n\n\nIn most mid...",
       "url": "https://www.linkedin.com/pulse/edition-27-integration-gap-where-roll-ups-quietly-lose-darren-flynt-lyqqc"
-    },
-    {
-      "number": "26",
-      "title": "Why Treating IT Like “Magic” Becomes a Financial Liability",
-      "description": "\nIn Finance, nobody blinks when you bring in specialists for the hard stuff.\n\n\n\nComplex tax. Technical accounting. Audit support. Specialized risk work.\n\n\n\n\nTha...",
-      "url": "https://www.linkedin.com/pulse/edition-26-why-treating-like-magic-becomes-financial-liability-flynt-hkrbc"
     }
   ],
-  "updated_at": "2026-05-11T21:12:38.832442+00:00",
+  "updated_at": "2026-05-18T21:05:41.261123+00:00",
   "newsletter_url": "https://www.linkedin.com/newsletters/the-finops-insider-7360380550928371712/"
 }
